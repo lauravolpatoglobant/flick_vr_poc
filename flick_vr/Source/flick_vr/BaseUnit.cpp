@@ -35,7 +35,11 @@ void ABaseUnit::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ABaseUnit::AffectHealth_Implementation(float delta)
 {
-	UE_LOG(LogClass, Log, TEXT("AffectHealth Implementation being called."));
-	Health += delta;
+	Health -= delta;
+
+	if (Health <= 0)
+	{
+		IsDead = true;
+	}
 }
 
