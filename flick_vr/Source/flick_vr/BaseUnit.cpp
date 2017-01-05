@@ -35,11 +35,5 @@ void ABaseUnit::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ABaseUnit::AffectHealth_Implementation(float delta)
 {
-	Health -= delta;
-
-	if (Health <= 0)
-	{
-		IsDead = true;
-	}
 }
 

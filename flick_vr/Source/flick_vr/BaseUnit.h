@@ -15,7 +15,7 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "BaseUnit")
 		float Health = 100;
 
-	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "BaseUnit")
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "BaseUnit")
 		bool IsDead = false;
 
 	// Sets default values for this character's properties
